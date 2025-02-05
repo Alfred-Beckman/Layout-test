@@ -1,27 +1,36 @@
 *{
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    border: 1px solid red;
     margin: 0;
     padding: 0;
+    --dark-color: #1F2937;
+    --text-color1: #c9c9c9;
+    --text-color2: white;
+    --text-color3: #1F2937;
+    --action-color: #3882F6;
 }
-
+html{
+    border: none;
+}
 body{
-    display: flex;
-
+    background-color: #f8faff;
+    border: none;
 }
 
 header{
+    display: flex;
     height: 340px;
-    background-color: #1F2937;
+    background-color: var(--dark-color);
     width: 100%;
-    color: white;
-
+    color: var(--text-color2);
+    position: fixed;
+    top: 0;
 }
 .header-content{
     margin: 0 auto;
     width: 80vw;
-    max-width: 1100px;
+    max-width: 1000px;
     height: 270px;
     display: flex;
     flex-direction: column;
@@ -34,35 +43,29 @@ header{
     text-transform: uppercase;
     height: 40px;
 }
-
 .logo{
     letter-spacing: 5px;
-    color: #c9c9c9;
+    color: var(--text-color1);
     font-size: 18px;
 }
-
 .header-list li{
     display: inline;
     margin-left: 1vw;
     font-weight: bold;
 }
-
 li a{
-    color: #c9c9c9;
+    color: var(--text-color1);
     text-decoration: none;
 }
-
 li a:hover{
-    color: white;
+    color: var(--text-color2);
 }
-
 .header-under{
     display: flex;
     align-items: center;
     justify-content:space-between;
     height: 200px;
 }
-
 .sign-up{
     display: flex;
     flex-direction: column;
@@ -73,19 +76,17 @@ li a:hover{
 .sign-up button{
     width: 100px;
     height: 30px;
-    background-color: #3882F6;
+    background-color: var(--action-color);
     border-radius: 5px;
-    color: white;
+    color: var(--text-color2);
     font-weight: bold;
     border: none;
     cursor: pointer;
 }
 .sign-up button:hover{
-    background-color: #659df8;
+    background-color: color-mix(in hsl, var(--action-color), white 15%);
 }
-
 img{
     height: 100%;
 }
-
 
