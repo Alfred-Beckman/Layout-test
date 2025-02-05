@@ -128,10 +128,6 @@ main{
 .illustration img:hover{
     border: var(--action-color) 2px solid;
 }
-.illustration img:active{
-    height: 244px;
-    width: 244px;
-}
 
 .quote-section{
     width: 100%;
