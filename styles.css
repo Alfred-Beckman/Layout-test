@@ -1,10 +1,11 @@
 *{
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 1px solid red;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     margin: 0;
     padding: 0;
     --dark-color: #1F2937;
+    --lightdark-color: #e5e7eb;
+    --background-color: #f8faff;
     --text-color1: #c9c9c9;
     --text-color2: white;
     --text-color3: #1F2937;
@@ -14,13 +15,13 @@ html{
     border: none;
 }
 body{
-    background-color: #f8faff;
+    background-color: var(--background-color);
     border: none;
 }
 
 header{
     display: flex;
-    height: 340px;
+    height: 300px;
     background-color: var(--dark-color);
     width: 100%;
     color: var(--text-color2);
@@ -89,4 +90,64 @@ li a:hover{
 img{
     height: 100%;
 }
+main{
+    color: var(--text-color3);
+}
+.illustration-section{
+    margin-top: 330px;
+    width: 100%;
+    height: 300px;
+    background-color: var(--background-color);
 
+}
+.illustration-section h2{
+    text-align: center;
+    height: 60px;
+}
+.illustration-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+}
+.illustration{
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+}
+.illustration img{
+    height: 122px;
+    width: 122px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: transparent 2px solid;
+}
+.illustration img:hover{
+    border: var(--action-color) 2px solid;
+}
+
+.quote-section{
+    width: 100%;
+    height: 275px;
+    background-color: var(--lightdark-color);
+}
+.cta-section{
+    width: 100%;
+    height: 250px;
+    background-color: var(--background-color);
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-color);
+
+}
+footer p{
+    padding-top: 19px;
+    text-align: center;
+    color: var(--text-color2);
+    font-size: 12px;
+}
